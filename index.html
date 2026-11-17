@@ -1,78 +1,259 @@
+
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Omat kotisivut ja koulutehtävät.">
-  <title>Nikon kotisivut</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bluefox Tech – IT-tuki ja tietotekniikkapalvelut</title>
+
+    <meta name="description" content="Bluefox Tech tarjoaa IT-tukea, tietotekniikkapalveluita ja teknisiä ratkaisuja yrityksille ja yksityisasiakkaille.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fc;
+            color: #263449;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #102b50;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 27px;
+            font-weight: bold;
+            color: #64b5ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #64b5ff;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #102b50, #1765a5);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .button {
+            display: inline-block;
+            background: #64b5ff;
+            color: #102b50;
+            padding: 13px 28px;
+            margin-top: 30px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: white;
+        }
+
+        section {
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #102b50;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .service {
+            background: white;
+            padding: 30px 22px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+        }
+
+        .service h3 {
+            color: #1765a5;
+            margin-bottom: 12px;
+        }
+
+        .about {
+            background: white;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .contact {
+            background: #e5effa;
+        }
+
+        footer {
+            background: #102b50;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container">
-      <p class="eyebrow">Tervetuloa</p>
-      <h1>Nikon kotisivut</h1>
-      <p class="intro">Oma verkkosivusto, jossa esittelen kiinnostuksen kohteitani ja koulutehtäviäni.</p>
+
+<header>
+    <div class="logo">BLUEFOX TECH</div>
+
+    <nav>
+        <a href="#etusivu">Etusivu</a>
+        <a href="#palvelut">Palvelut</a>
+        <a href="#yritys">Yritys</a>
+        <a href="#yhteys">Yhteystiedot</a>
+    </nav>
+</header>
+
+<main>
+
+    <div class="hero" id="etusivu">
+        <h1>Bluefox Tech</h1>
+
+        <p>
+            Luotettavaa IT-tukea ja moderneja
+            tietotekniikkaratkaisuja.
+            Autamme tekemään teknologiasta helpompaa.
+        </p>
+
+        <a href="#palvelut" class="button">
+            Tutustu palveluihin
+        </a>
     </div>
-  </header>
 
-  <nav class="site-nav" aria-label="Päänavigaatio">
-    <div class="container nav-inner">
-      <a href="#etusivu">Etusivu</a>
-      <a href="#kiinnostukset">Kiinnostukset</a>
-      <a href="#tehtavat">Koulutehtävät</a>
-      <a href="#yhteys">Ota yhteyttä</a>
-    </div>
-  </nav>
+    <section id="palvelut">
+        <h2>Palvelumme</h2>
 
-  <main class="container">
-    <section id="etusivu" class="panel">
-      <h2>Etusivu</h2>
-      <p>Tämä on harjoitustyönä tehty verkkosivusto. Sivun rakennetta on tehty HTML:llä, ulkoasua CSS:llä ja pientä toiminnallisuutta JavaScriptillä.</p>
+        <p>Teknistä apua ja ratkaisuja erilaisiin IT-tarpeisiin.</p>
+
+        <div class="services">
+
+            <div class="service">
+                <h3>💻 IT-tuki</h3>
+                <p>
+                    Tietokoneiden ongelmatilanteet,
+                    käyttöönotot ja tekninen neuvonta.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>🌐 Verkkosivut</h3>
+                <p>
+                    Verkkosivujen suunnittelu,
+                    toteutus ja ylläpito.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>🔧 Tietokonehuolto</h3>
+                <p>
+                    Tietokoneiden huolto,
+                    päivitykset ja käyttöönotto.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>🛡️ Tietoturva</h3>
+                <p>
+                    Tietoturvan perusteet,
+                    suojaus ja turvallinen tietotekniikan käyttö.
+                </p>
+            </div>
+
+        </div>
     </section>
 
-    <section id="kiinnostukset" class="panel">
-      <h2>Kiinnostuksen kohteet</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Tekniikka</h3>
-          <p>Tietokoneet, ohjelmistot ja verkkosivujen tekeminen.</p>
-        </article>
-        <article class="card">
-          <h3>Pelaaminen</h3>
-          <p>Pelaaminen ja erilaisiin peleihin tutustuminen.</p>
-        </article>
-        <article class="card">
-          <h3>Autot</h3>
-          <p>Autot, niiden tekniikka ja ylläpito.</p>
-        </article>
-      </div>
+    <section class="about" id="yritys">
+        <h2>Tietoa Bluefox Techistä</h2>
+
+        <p>
+            Bluefox Tech keskittyy tarjoamaan
+            käytännönläheisiä IT-palveluita,
+            teknistä tukea ja toimivia digitaalisia ratkaisuja.
+
+            Tavoitteena on tehdä tietotekniikan
+            käytöstä helppoa, turvallista ja sujuvaa.
+        </p>
     </section>
 
-    <section id="tehtavat" class="panel">
-      <h2>Koulutehtävät</h2>
-      <p>Tähän osioon voi lisätä linkkejä omiin HTML-, CSS- ja JavaScript-harjoituksiin.</p>
-      <ul>
-        <li>HTML-sivun rakenne</li>
-        <li>CSS-tyylien harjoittelu</li>
-        <li>JavaScriptin perusteet</li>
-        <li>GitHubin ja GitHub Actionsin käyttö</li>
-      </ul>
+    <section class="contact" id="yhteys">
+        <h2>Ota yhteyttä</h2>
+
+        <p>
+            Tarvitsetko apua tietotekniikan kanssa?
+            Ota yhteyttä ja keskustellaan tarpeistasi.
+        </p>
+
+        <p style="margin-top:20px;">
+            Bluefox Tech
+        </p>
     </section>
 
-    <section id="yhteys" class="panel">
-      <h2>Ota yhteyttä</h2>
-      <p>Tämä on harjoitussivuston yhteystieto-osio. Lisää tähän omat yhteystietosi vain, jos haluat julkaista ne verkossa.</p>
-      <button id="hello-button" type="button">Näytä tervehdys</button>
-      <p id="hello-message" class="message" aria-live="polite"></p>
-    </section>
-  </main>
+</main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Nikon kotisivut</p>
-    </div>
-  </footer>
+<footer>
+    <p>© 2026 Bluefox Tech – Kaikki oikeudet pidätetään.</p>
+    <p>IT-tukea ja teknisiä ratkaisuja.</p>
+</footer>
+
 </body>
 </html>
