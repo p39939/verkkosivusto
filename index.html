@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Omat kotisivut ja koulutehtävät.">
+  <title>Nikon kotisivut</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">Tervetuloa</p>
+      <h1>Nikon kotisivut</h1>
+      <p class="intro">Oma verkkosivusto, jossa esittelen kiinnostuksen kohteitani ja koulutehtäviäni.</p>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Päänavigaatio">
+    <div class="container nav-inner">
+      <a href="#etusivu">Etusivu</a>
+      <a href="#kiinnostukset">Kiinnostukset</a>
+      <a href="#tehtavat">Koulutehtävät</a>
+      <a href="#yhteys">Ota yhteyttä</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="etusivu" class="panel">
+      <h2>Etusivu</h2>
+      <p>Tämä on harjoitustyönä tehty verkkosivusto. Sivun rakennetta on tehty HTML:llä, ulkoasua CSS:llä ja pientä toiminnallisuutta JavaScriptillä.</p>
+    </section>
+
+    <section id="kiinnostukset" class="panel">
+      <h2>Kiinnostuksen kohteet</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Tekniikka</h3>
+          <p>Tietokoneet, ohjelmistot ja verkkosivujen tekeminen.</p>
+        </article>
+        <article class="card">
+          <h3>Pelaaminen</h3>
+          <p>Pelaaminen ja erilaisiin peleihin tutustuminen.</p>
+        </article>
+        <article class="card">
+          <h3>Autot</h3>
+          <p>Autot, niiden tekniikka ja ylläpito.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tehtavat" class="panel">
+      <h2>Koulutehtävät</h2>
+      <p>Tähän osioon voi lisätä linkkejä omiin HTML-, CSS- ja JavaScript-harjoituksiin.</p>
+      <ul>
+        <li>HTML-sivun rakenne</li>
+        <li>CSS-tyylien harjoittelu</li>
+        <li>JavaScriptin perusteet</li>
+        <li>GitHubin ja GitHub Actionsin käyttö</li>
+      </ul>
+    </section>
+
+    <section id="yhteys" class="panel">
+      <h2>Ota yhteyttä</h2>
+      <p>Tämä on harjoitussivuston yhteystieto-osio. Lisää tähän omat yhteystietosi vain, jos haluat julkaista ne verkossa.</p>
+      <button id="hello-button" type="button">Näytä tervehdys</button>
+      <p id="hello-message" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Nikon kotisivut</p>
+    </div>
+  </footer>
+</body>
+</html>
